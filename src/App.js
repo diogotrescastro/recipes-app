@@ -7,7 +7,7 @@ import LSProvider from './context/LSProvider';
 
 function App() {
   return (
-    <BrowserRouter basename="/recipes-app">
+    <BrowserRouter basename="/">
       <LSProvider>
         <MainProvider>
           <Routes />
