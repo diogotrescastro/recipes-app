@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/recipes-app/static/css/main.e3b7b00e.chunk.css",
+    "main.js": "/recipes-app/static/js/main.b476625e.chunk.js",
+    "main.js.map": "/recipes-app/static/js/main.b476625e.chunk.js.map",
+    "runtime-main.js": "/recipes-app/static/js/runtime-main.1228032d.js",
+    "runtime-main.js.map": "/recipes-app/static/js/runtime-main.1228032d.js.map",
+    "static/js/2.40a58951.chunk.js": "/recipes-app/static/js/2.40a58951.chunk.js",
+    "static/js/2.40a58951.chunk.js.map": "/recipes-app/static/js/2.40a58951.chunk.js.map",
+    "index.html": "/recipes-app/index.html",
+    "precache-manifest.183de5a4d7fc734c153475d671d4a40a.js": "/recipes-app/precache-manifest.183de5a4d7fc734c153475d671d4a40a.js",
+    "service-worker.js": "/recipes-app/service-worker.js",
+    "static/css/main.e3b7b00e.chunk.css.map": "/recipes-app/static/css/main.e3b7b00e.chunk.css.map",
+    "static/js/2.40a58951.chunk.js.LICENSE.txt": "/recipes-app/static/js/2.40a58951.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/recipes-app/static/media/backgroundLogin.fba924b8.svg",
+    "static/media/blackHeartIcon.svg": "/recipes-app/static/media/blackHeartIcon.b8913346.svg",
+    "static/media/drinkIcon.svg": "/recipes-app/static/media/drinkIcon.5457b0b9.svg",
+    "static/media/exploreIcon.svg": "/recipes-app/static/media/exploreIcon.4dfb0801.svg",
+    "static/media/logo.svg": "/recipes-app/static/media/logo.f0b0404b.svg",
+    "static/media/mealIcon.svg": "/recipes-app/static/media/mealIcon.4a7c8820.svg",
+    "static/media/profileIcon.svg": "/recipes-app/static/media/profileIcon.2ef55437.svg",
+    "static/media/searchIcon.svg": "/recipes-app/static/media/searchIcon.1ad5c257.svg",
+    "static/media/shareIcon.svg": "/recipes-app/static/media/shareIcon.bdf82e3e.svg",
+    "static/media/whiteHeartIcon.svg": "/recipes-app/static/media/whiteHeartIcon.ea3b6ba8.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1228032d.js",
+    "static/js/2.40a58951.chunk.js",
+    "static/css/main.e3b7b00e.chunk.css",
+    "static/js/main.b476625e.chunk.js"
+  ]
+}
