@@ -37,9 +37,9 @@ function FavoriteButton({ recipeData, type, index }) {
   }
 
   const { pathname } = useLocation();
-  const blackHeartIcon = pathname.includes('receitas')
+  const blackHeartIcon = pathname.includes('recipes')
     ? blackHeartIconB : blackHeartIconW;
-  const whiteHeartIcon = pathname.includes('receitas')
+  const whiteHeartIcon = pathname.includes('recipes')
     ? whiteHeartIconB : whiteHeartIconW;
 
   return (

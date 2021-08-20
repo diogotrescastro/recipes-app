@@ -13,7 +13,7 @@ function ShareButton({ link, index }) {
   }
 
   const { pathname } = useLocation();
-  const shareIcon = pathname.includes('receitas') ? shareIconB : shareIconW;
+  const shareIcon = pathname.includes('recipes') ? shareIconB : shareIconW;
 
   return (
     <button
@@ -24,14 +24,14 @@ function ShareButton({ link, index }) {
     >
       {copy ? (
         <span
-          className={ pathname.includes('receitas')
+          className={ pathname.includes('recipes')
             ? 'link-black' : 'link-white' }
         >
           Copied link!
         </span>
       ) : (<img
         src={ shareIcon }
-        alt="Compartilhar"
+        alt="Share"
         data-testid={ `${index}-horizontal-share-btn` }
         className="share-btn"
       />)}
