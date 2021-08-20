@@ -21,7 +21,7 @@ function Login() {
         <label htmlFor="email-input" className="login-email">
           <input
             type="text"
-            value="visitante@diogoaugusto.dev"
+            value="visitor@diogoaugusto.dev"
             data-testid="email-input"
             placeholder="Email"
             id="email-input"

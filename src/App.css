@@ -584,6 +584,7 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  margin: 20px;
 }
 
 .div-start-btn {
