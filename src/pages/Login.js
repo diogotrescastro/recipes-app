@@ -5,7 +5,7 @@ import LSContext from '../context/LSContext';
 import logo from '../images/logo.svg';
 
 function Login() {
-  const [isButtonDisabled, setIsButtonDisabled] = useState(true);
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
   const [email, setEmail] = useState('');
   const { LSFunctions: { setEmail: setLSEmail } } = useContext(LSContext);
 
@@ -21,6 +21,7 @@ function Login() {
         <label htmlFor="email-input" className="login-email">
           <input
             type="text"
+            value="visitante@diogoaugusto.dev"
             data-testid="email-input"
             placeholder="Email"
             id="email-input"
@@ -32,6 +33,7 @@ function Login() {
         <label htmlFor="password-input" className="login-password">
           <input
             type="password"
+            value="1234567"
             data-testid="password-input"
             placeholder="Password"
             id="password-input"
