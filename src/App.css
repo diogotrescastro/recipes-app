@@ -9,22 +9,7 @@
   outline: none;
 }
 
-.meals {
-  align-items: center;
-  background: #0fa36b;
-  color: #464646;
-  display: flex;
-  flex-direction: column;
-  font-family: sans-serif;
-  height: 100vh;
-  justify-content: center;
-  width: 100%;
-}
-
-.rocksGlass {
-  animation: shake 1s infinite ease;
-  max-height: 80vh;
-}
+/* Carousel */
 
 /* https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6 */
 .recommendations-box {
@@ -66,50 +51,7 @@
   margin: 0 5px;
 }
 
-.meals > .logo {
-  animation: shake 1.5s infinite ease;
-  color: aliceblue;
-  font-family: Montserrat , sans-serif;
-  font-size: 3em;
-  font-weight: 900;
-}
-
-@keyframes shake {
-
-  0% {
-    transform: rotate(5deg);
-  }
-
-  50% {
-    transform: rotate(-5deg);
-  }
-
-  100% {
-    transform: rotate(5deg);
-  }
-}
-
-@keyframes clink {
-
-  0% {
-    transform: rotate(-10deg);
-  }
-
-  50% {
-    transform: rotate(20deg);
-  }
-
-  100% {
-    transform: rotate(-10deg);
-  }
-}
-
-.ingredient-checked {
-  text-decoration: line-through;
-}
-
-
-/* Página de Login */
+/* Login */
 .login-page {
   align-items: center;
   background-image: url('./images/backgroundLogin.svg');
@@ -159,10 +101,9 @@
 
 .login-btn:disabled {
   background-color: rgb(133, 133, 133);
-  opacity: 70%;
 }
 
-/* Rodape */
+/* Footer */
 .footer {
   align-items: center;
   background-color: white;
@@ -207,6 +148,11 @@
 }
 
 .profile-icon {
+  width: 30px;
+}
+
+.div-null {
+  height: 30px;
   width: 30px;
 }
 
@@ -256,7 +202,7 @@
   width: 90%;
 }
 
-
+/* Drink & Meal */
 .filter-btn {
   border-radius: 28px;
   border-style: none;
@@ -302,7 +248,6 @@
   width: 30%;
 }
 
-/* Página Principal */
 .main-recipes-box {
   align-items: stretch;
   display: flex;
@@ -368,6 +313,7 @@
   text-align: center;
 }
 
+/* Explore */
 .explore-select-input {
   background-color: white;
   border-color: #333;
@@ -408,7 +354,7 @@
   width: 100%;
 }
 
-/* Página de Perfil */
+/* Profile */
 .div-profile {
   align-items: center;
   display: flex;
@@ -469,6 +415,7 @@
   margin-bottom: 12px;
 }
 
+/* Done */
 .doneFilters {
   display: flex;
   justify-content: center;
@@ -569,7 +516,7 @@
   margin-right: 0.5em;
 }
 
-/* Página de detalhes  */
+/* Details  */
 .detail-page {
   margin-bottom: 50px;
 }
@@ -633,6 +580,12 @@
   position: absolute;
 }
 
+.video-detail {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .div-start-btn {
   display: flex;
   justify-content: center;
@@ -675,7 +628,7 @@
   text-transform: uppercase;
 }
 
-/* Página de Progresso */
+/* Progress */
 .progress-page {
   margin-bottom: 50px;
 }
@@ -683,7 +636,11 @@
 .detail-infos form {
   display: flex;
   flex-direction: column;
-  margin: 2vh 0;
+  margin: 3vh 0;
+}
+
+.detail-infos p {
+  margin: 3vh 0;
 }
 
 .detail-infos label {
@@ -691,12 +648,19 @@
 }
 
 .progress-checklist {
+  margin-bottom: 0.5em;
   margin-right: 1vh;
 }
+
+.ingredient-checked {
+  text-decoration: line-through;
+}
+
 
 .progress-instructions {
   margin-bottom: 1vh;
 }
+
 
 .finish-food-btn {
   background-color: #e34f5e;
@@ -730,12 +694,10 @@
 
 .finish-food-btn:disabled {
   background-color: rgb(133, 133, 133);
-  opacity: 70%;
 }
 
 .finish-drink-btn:disabled {
   background-color: rgb(133, 133, 133);
-  opacity: 70%;
 }
 
 
@@ -763,7 +725,7 @@
 }
 
 
-/* Página de Receitas Favoritas */
+/* Favorites */
 .favorite-recipes-box-image {
   background-color: white;
   background-position: center;
@@ -814,13 +776,9 @@
   color: white;
 }
 
-.div-null {
-  height: 30px;
-  width: 30px;
-}
-
 @media only screen and ( min-width : 768px ) {
 
+  /* Login */
   .login-page {
     background-size: cover;
   }
@@ -833,11 +791,13 @@
     margin-top: 10%;
   }
 
+  /* Footer */
   .footer {
     height: 6vh;
     padding: 1% 10%;
   }
 
+  /* header */
   .footer img {
     height: 4vh;
   }
@@ -858,6 +818,7 @@
     width: 60%;
   }
 
+  /* Meal & Drinks */
   .meal-div-category {
     align-items: center;
     display: flex;
@@ -904,6 +865,7 @@
     width: 20%;
   }
 
+  /* Explore */
   .explore-select-input {
     display: flex;
     margin-left: auto;
@@ -916,6 +878,7 @@
     width: 20%;
   }
 
+  /* Profile */
   .profile-done-btn {
     padding: 1em;
     width: 20%;
@@ -931,6 +894,7 @@
     width: 20%;
   }
 
+  /* Done */
   .doneFilters {
     margin-left: auto;
     margin-right: auto;
@@ -960,6 +924,7 @@
     align-self: center;
   }
 
+  /* Detail */
   .detail-page {
     margin-bottom: 90px;
   }
@@ -978,6 +943,12 @@
     padding: 1% 10%;
   }
 
+  .detail-instructions {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
   .start-btn {
     font-size: 18px;
     margin: 15px;
@@ -990,6 +961,7 @@
     padding: 1em;
   }
 
+  /* Progress */
   .progress-page {
     margin-bottom: 90px;
   }
@@ -1010,6 +982,7 @@
     width: auto;
   }
 
+  /* Favorite */
   .favorite-recipe-card {
     width: 80%;
   }

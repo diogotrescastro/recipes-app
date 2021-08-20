@@ -92,9 +92,8 @@ function DrinkRecipeInProgress({ match: { params: { id } } }) {
           </div>
         </div>
         <div className="detail-infos">
-          <form>
-            <h3>CheckList de Ingredientes</h3>
-
+          <h3>CheckList de Ingredientes</h3>
+          <form className="ingredient-checklist">
             {
               listIngredients(recipe).map((ingredient, index) => (
                 <label

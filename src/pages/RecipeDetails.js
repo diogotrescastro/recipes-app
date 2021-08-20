@@ -112,14 +112,16 @@ function RecipeDetails({ match: { params: { id } } }) {
             }
           </ul>
           <h3>Instruções</h3>
-          <p
-            data-testid="instructions"
-            className="detail-description"
-          >
-            {strInstructions}
-          </p>
+          <div className="detail-instructions">
+            <p
+              data-testid="instructions"
+              className="detail-description"
+            >
+              {strInstructions}
+            </p>
+            <RecipeDetailsIframe recipeType={ recipeType } strYoutube={ strYoutube } />
+          </div>
         </div>
-        <RecipeDetailsIframe recipeType={ recipeType } strYoutube={ strYoutube } />
         <Recommendations recommendations={ recomendedRecipe.slice(0, MAX_RESULTS) } />
         <VerifyStart id={ id } />
       </section>

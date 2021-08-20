@@ -8,6 +8,8 @@ function VerifyStart({ id }) {
   const cocktails = inProgressRecipes.cocktails || {};
   const meals = inProgressRecipes.meals || {};
 
+  console.log(window.location);
+
   if (inProgressRecipes
     && ((Object.keys(cocktails)).includes(id)
       || (Object.keys(meals)).includes(id))) {
