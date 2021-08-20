@@ -8,11 +8,11 @@ import { getRandomMeal } from '../services/theMealAPI';
 const RecipeExplore = () => {
   const { pathname } = useLocation();
   const [randomSurprise, setRandomSurprise] = useState('');
-  const explorarComidas = '/explorar/comidas';
-  const title = pathname.includes('comidas') ? 'Explorar Comidas' : 'Explorar Bebidas';
+  const exploremeals = '/explore/meals';
+  const title = pathname.includes('meals') ? 'explore meals' : 'explore drinks';
 
   useEffect(() => {
-    if (pathname === explorarComidas) {
+    if (pathname === exploremeals) {
       getRandomMeal()
         .then((result) => setRandomSurprise(result));
     } else {
@@ -24,31 +24,31 @@ const RecipeExplore = () => {
     <>
       <Header title={ title } />
       <div className="explore-div">
-        <Link to={ `${pathname}/ingredientes` }>
+        <Link to={ `${pathname}/Ingredients` }>
           <button
             type="button"
             data-testid="explore-by-ingredient"
             className="explore-btn"
           >
-            Por Ingredientes
+            By Ingredients
           </button>
         </Link>
-        { (pathname === explorarComidas)
+        { (pathname === exploremeals)
           ? (
-            <Link to="/explorar/comidas/area">
+            <Link to="/explore/meals/area">
               <button
                 type="button"
                 data-testid="explore-by-area"
                 className="explore-btn"
               >
-                Por Local de Origem
+                By Place of Origin
               </button>
             </Link>)
           : null}
         <Link
           to={
-            pathname === explorarComidas
-              ? `/comidas/${randomSurprise}` : `/bebidas/${randomSurprise}`
+            pathname === exploremeals
+              ? `/meals/${randomSurprise}` : `/drinks/${randomSurprise}`
           }
         >
           <button
@@ -57,7 +57,7 @@ const RecipeExplore = () => {
             type="button"
             className="explore-btn"
           >
-            Me Surpreenda!
+            Surprise Me!
           </button>
         </Link>
       </div>

@@ -34,7 +34,7 @@ const FavoritesRecipes = () => {
   }
   return (
     <>
-      <Header title="Receitas Favoritas" />
+      <Header title="Favorite Recipes" />
       <section className="doneFilters">
         <button
           type="button"

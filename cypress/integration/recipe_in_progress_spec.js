@@ -463,7 +463,7 @@ describe('52 - Implemente a solução de maneira que o botão de finalizar recei
   });
 });
 
-describe('53 - Redirecione a pessoa usuária após clicar no botão "Finalizar receita", para a página de receitas feitas, cuja rota deve ser `/receitas-feitas`', () => {
+describe('53 - Redirecione a pessoa usuária após clicar no botão "Finalizar receita", para a página de receitas feitas, cuja rota deve ser `/done-recipes`', () => {
   it('redireciona após concluir uma receita de comida', () => {
     cy.visit('http://localhost:3000/comidas/52771/in-progress', {
       onBeforeLoad(win) {
@@ -475,7 +475,7 @@ describe('53 - Redirecione a pessoa usuária após clicar no botão "Finalizar r
       .find('input[type="checkbox"]')
       .check();
     cy.get('[data-testid="finish-recipe-btn"]').click();
-    cy.location().should((loc) => expect(loc.pathname).to.eq('/receitas-feitas'));
+    cy.location().should((loc) => expect(loc.pathname).to.eq('/done-recipes'));
   });
 
   it('redireciona após concluir uma receita de bebida', () => {
@@ -489,6 +489,6 @@ describe('53 - Redirecione a pessoa usuária após clicar no botão "Finalizar r
       .find('input[type="checkbox"]')
       .check();
     cy.get('[data-testid="finish-recipe-btn"]').click();
-    cy.location().should((loc) => expect(loc.pathname).to.eq('/receitas-feitas'));
+    cy.location().should((loc) => expect(loc.pathname).to.eq('/done-recipes'));
   });
 });

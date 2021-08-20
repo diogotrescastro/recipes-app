@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LSContext from '../context/LSContext';
 
@@ -7,6 +7,7 @@ function VerifyStart({ id }) {
   const { LSValues: { inProgressRecipes, doneRecipes } } = useContext(LSContext);
   const cocktails = inProgressRecipes.cocktails || {};
   const meals = inProgressRecipes.meals || {};
+  let history = useHistory();
 
   console.log(window.location);
 
@@ -16,14 +17,14 @@ function VerifyStart({ id }) {
     return (
       <div className="div-start-btn">
         <Link
-          to={ `${window.location.pathname}/in-progress` }
+          to={ `${window.location.hash}/in-progress` }
         >
           <button
             type="button"
             data-testid="start-recipe-btn"
             className="continue-btn"
           >
-            Continuar Receita
+            continue recipe
           </button>
         </Link>
       </div>
@@ -33,14 +34,14 @@ function VerifyStart({ id }) {
     return (
       <div className="div-start-btn">
         <Link
-          to={ `${window.location.pathname}/in-progress` }
+          to={ `${window.location.hash}/in-progress` }
         >
           <button
             type="button"
             data-testid="start-recipe-btn"
             className="start-btn"
           >
-            Iniciar Receita
+            start recipe
           </button>
         </Link>
       </div>

@@ -24,25 +24,25 @@ const Profile = () => {
 
   return (
     <>
-      <Header title="Perfil" />
+      <Header title="profile" />
       <section className="div-profile">
         <h3 data-testid="profile-email" className="profile-email">{ userEmail }</h3>
-        <Link to="/receitas-feitas">
+        <Link to="/done-recipes">
           <button
             type="button"
             data-testid="profile-done-btn"
             className="profile-done-btn"
           >
-            Receitas Feitas
+            Done Recipes
           </button>
         </Link>
-        <Link to="/receitas-favoritas">
+        <Link to="/favorite-recipes">
           <button
             type="button"
             data-testid="profile-favorite-btn"
             className="profile-favorite-btn"
           >
-            Receitas Favoritas
+            Favorite Recipes
           </button>
         </Link>
         <Link to="/">
@@ -52,7 +52,7 @@ const Profile = () => {
             onClick={ () => resetContext() }
             className="profile-logout-btn"
           >
-            Sair
+            logout
           </button>
         </Link>
       </section>

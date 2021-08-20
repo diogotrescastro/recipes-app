@@ -27,7 +27,7 @@ function ShareButton({ link, index }) {
           className={ pathname.includes('receitas')
             ? 'link-black' : 'link-white' }
         >
-          Link copiado!
+          Copied link!
         </span>
       ) : (<img
         src={ shareIcon }

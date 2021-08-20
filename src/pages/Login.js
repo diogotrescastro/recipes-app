@@ -33,13 +33,13 @@ function Login() {
           <input
             type="password"
             data-testid="password-input"
-            placeholder="Senha"
+            placeholder="Password"
             id="password-input"
             required
             pattern=".{7,}"
           />
         </label>
-        <Link to="/comidas">
+        <Link to="/meals">
           <button
             type="button"
             data-testid="login-submit-btn"
@@ -47,7 +47,7 @@ function Login() {
             onClick={ () => saveTokensAndEmail(email, setLSEmail) }
             className="login-btn"
           >
-            Entrar
+            enter
           </button>
         </Link>
       </form>

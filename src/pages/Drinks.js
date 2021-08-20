@@ -76,7 +76,7 @@ function Drinks() {
   return (
     loading ? <DrinkLoader /> : (
       <div>
-        <Header title="Bebidas" isButtonVisible />
+        <Header title="drinks" isButtonVisible />
         <div className="drink-div-category">
           <button
             data-testid="All-category-filter"

@@ -41,7 +41,7 @@ const RecipeExploreArea = () => {
   return (
     loading ? <FoodLoader /> : (
       <>
-        <Header title="Explorar Origem" isButtonVisible />
+        <Header title="explore Origin" isButtonVisible />
         <select
           data-testid="explore-by-area-dropdown"
           onChange={ handleChange }

@@ -103,13 +103,13 @@ describe('Done recipes screen', () => {
 
       cy.window().then((win) => {
         cy.wrap(win.navigator.clipboard.readText())
-          .should('eq', 'http://localhost:3000/comidas/52771');
+          .should('eq', 'http://localhost:3000/meals/52771');
       });
     });
   });
 
   describe('58 - Implemente 2 botões que filtram as receitas por comida ou bebida e um terceiro que remove todos os filtros', () => {
-    it('Ao clicar no botão "Food" as receitas devem ser filtradas por comidas', () => {
+    it('Ao clicar no botão "Food" as receitas devem ser filtradas por meals', () => {
       cy.get('[data-testid="filter-by-food-btn"]').click();
 
       cy.get('[data-testid="0-horizontal-name"]').contains(doneRecipes[0].name);
@@ -135,7 +135,7 @@ describe('Done recipes screen', () => {
     it('Ao clicar na foto da receita, a rota deve mudar para a tela de detalhes daquela receita', () => {
       cy.get('[data-testid="0-horizontal-image"]').click();
 
-      cy.location().should((loc) => expect(loc.pathname).to.eq('/comidas/52771'));
+      cy.location().should((loc) => expect(loc.pathname).to.eq('/meals/52771'));
     });
 
     it('Ao clicar no nome da receita, a rota deve mudar para a tela de detalhes daquela receita', () => {

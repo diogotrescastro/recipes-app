@@ -79,7 +79,7 @@ function Foods() {
       ? <FoodLoader />
       : (
         <div>
-          <Header title="Comidas" isButtonVisible />
+          <Header title="meals" isButtonVisible />
           <div className="meal-div-category">
             <button
               type="button"

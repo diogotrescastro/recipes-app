@@ -33,12 +33,9 @@ const DoneRecipes = () => {
     }
   }
 
-  console.log(filteredRecipes);
-  console.log(doneRecipes);
-
   return (
     <>
-      <Header title="Receitas Feitas" />
+      <Header title="Done Recipes" />
       <section className="doneFilters">
         <button
           type="button"

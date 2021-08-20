@@ -16,7 +16,7 @@ function DoneRecipesCard({ recipe, index }) {
     type,
     doneDate,
   } = recipe;
-  const path = type === 'comida' ? `/comidas/${id}` : `/bebidas/${id}`;
+  const path = type === 'comida' ? `/meals/${id}` : `/drinks/${id}`;
   const categoryOrArea = area ? `${area} - ${category}` : alcoholicOrNot;
   const sliceNumber = -16;
   const SliceLink = (window.location.href).slice(0, sliceNumber);

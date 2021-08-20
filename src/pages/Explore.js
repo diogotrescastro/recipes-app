@@ -5,24 +5,24 @@ import Header from '../components/Header';
 
 const Explore = () => (
   <>
-    <Header title="Explorar" />
+    <Header title="explore" />
     <div className="explore-div">
-      <Link to="/explorar/comidas">
+      <Link to="/explore/meals">
         <button
           type="button"
           data-testid="explore-food"
           className="explore-btn"
         >
-          Explorar Comidas
+          explore meals
         </button>
       </Link>
-      <Link to="/explorar/bebidas">
+      <Link to="/explore/drinks">
         <button
           type="button"
           data-testid="explore-drinks"
           className="explore-btn"
         >
-          Explorar Bebidas
+          explore drinks
         </button>
       </Link>
     </div>

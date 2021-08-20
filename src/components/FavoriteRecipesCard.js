@@ -37,7 +37,7 @@ function FavoriteRecipesCard({ recipe, index }) {
     } return recipeData;
   }
 
-  const path = type === 'comida' ? `/comidas/${id}` : `/bebidas/${id}`;
+  const path = type === 'comida' ? `/meals/${id}` : `/drinks/${id}`;
   const categoryOrArea = area ? `${area} - ${category}` : alcoholicOrNot;
   const sliceNumber = -19;
   const SliceLink = (window.location.href).slice(0, sliceNumber);

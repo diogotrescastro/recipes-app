@@ -20,7 +20,7 @@ function RecipeDetails({ match: { params: { id } } }) {
   const [recomendedRecipe, setRecomendedRecipe] = useState([]);
   const MAX_RESULTS = 6;
   const { pathname } = useLocation();
-  const recipeType = pathname.includes('comidas') ? 'comida' : 'bebida';
+  const recipeType = pathname.includes('meals') ? 'comida' : 'bebida';
   const {
     strDrink,
     strMeal,
@@ -98,7 +98,7 @@ function RecipeDetails({ match: { params: { id } } }) {
           </div>
         </div>
         <div className="detail-infos">
-          <h3>Ingredientes</h3>
+          <h3>Ingredients</h3>
           <ul className="detail-ingredients">
             {
               listIngredients(recipeData).map((ingredient, index) => (
@@ -111,7 +111,7 @@ function RecipeDetails({ match: { params: { id } } }) {
               ))
             }
           </ul>
-          <h3>Instruções</h3>
+          <h3>Instructions</h3>
           <div className="detail-instructions">
             <p
               data-testid="instructions"

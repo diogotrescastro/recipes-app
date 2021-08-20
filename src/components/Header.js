@@ -14,22 +14,22 @@ function Header({ title, isButtonVisible }) {
 
   useEffect(() => {
     const headerClass = document.querySelector('.header-div').style;
-    if (title === 'Comidas') {
+    if (title === 'meals') {
       headerClass.backgroundColor = '#E34F5E';
     }
-    if (title === 'Bebidas') {
+    if (title === 'drinks') {
       headerClass.backgroundColor = '#FAC065';
     }
-    if (title.includes('Explorar')) {
+    if (title.includes('explore')) {
       headerClass.backgroundColor = '#8E66FF';
     }
-    if (title === 'Receitas Favoritas') {
+    if (title === 'Favorite Recipes') {
       headerClass.backgroundColor = '#BEE34F';
     }
-    if (title === 'Perfil') {
+    if (title === 'profile') {
       headerClass.backgroundColor = '#333333';
     }
-    if (title === 'Receitas Feitas') {
+    if (title === 'Done Recipes') {
       headerClass.backgroundColor = '#4DBB98';
     }
   }, [title]);
@@ -58,7 +58,7 @@ function Header({ title, isButtonVisible }) {
   return (
     <header className="header-app">
       <div className="header-div">
-        <Link to="/perfil">
+        <Link to="/profile">
           <img
             data-testid="profile-top-btn"
             src={ ProfileIcon }

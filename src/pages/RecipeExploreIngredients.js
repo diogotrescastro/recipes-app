@@ -11,12 +11,12 @@ import FoodLoader from '../components/FoodLoader';
 
 const RecipeExploreIngredients = () => {
   const { pathname } = useLocation();
-  const explorarComidas = '/explorar/comidas/ingredientes';
+  const exploremeals = '/explore/meals/Ingredients';
   const { setData, loading, setLoading } = useContext(MainContext);
 
   useEffect(() => {
     setLoading(true);
-    if (explorarComidas === pathname) {
+    if (exploremeals === pathname) {
       getMealsIngredients()
         .then((result) => {
           setLoading(false);
@@ -32,14 +32,14 @@ const RecipeExploreIngredients = () => {
   }, [pathname, setData, setLoading]);
 
   function loader() {
-    return pathname.includes('bebidas')
+    return pathname.includes('drinks')
       ? <DrinkLoader /> : <FoodLoader />;
   }
 
   return (
     loading ? loader() : (
       <>
-        <Header title="Explorar Ingredientes" />
+        <Header title="explore Ingredients" />
         <RecipesCardsContainer test="ingredient" />
         <FooterMenu />
       </>

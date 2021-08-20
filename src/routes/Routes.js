@@ -24,62 +24,62 @@ const Routes = () => (
     />
     <Route
       exact
-      path="/comidas"
+      path="/meals"
       component={ Foods }
     />
     <Route
       exact
-      path="/bebidas"
+      path="/drinks"
       component={ Drinks }
     />
     <Route
       exact
-      path={ ['/comidas/:id', '/bebidas/:id'] }
+      path={ ['/meals/:id', '/drinks/:id'] }
       component={ RecipeDetails }
     />
     <Route
       exact
-      path="/comidas/:id/in-progress"
+      path="/meals/:id/in-progress"
       component={ FoodRecipeInProgress }
     />
     <Route
       exact
-      path="/bebidas/:id/in-progress"
+      path="/drinks/:id/in-progress"
       component={ DrinkRecipeInProgress }
     />
     <Route
       exact
-      path="/explorar"
+      path="/explore"
       component={ Explore }
     />
     <Route
       exact
-      path={ ['/explorar/comidas', '/explorar/bebidas'] }
+      path={ ['/explore/meals', '/explore/drinks'] }
       component={ RecipeExplore }
     />
     <Route
       exact
-      path={ ['/explorar/comidas/ingredientes', '/explorar/bebidas/ingredientes'] }
+      path={ ['/explore/meals/Ingredients', '/explore/drinks/Ingredients'] }
       component={ RecipeExploreIngredients }
     />
     <Route
       exact
-      path="/explorar/comidas/area"
+      path="/explore/meals/area"
       component={ RecipeExploreArea }
     />
     <Route
       exact
-      path="/perfil"
+      path="/profile"
       component={ Profile }
     />
     <Route
       exact
-      path="/receitas-feitas"
+      path="/done-recipes"
       component={ DoneRecipes }
     />
     <Route
       exact
-      path="/receitas-favoritas"
+      path="/favorite-recipes"
       component={ FavoritesRecipes }
     />
     <Route

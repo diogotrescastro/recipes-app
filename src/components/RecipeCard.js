@@ -20,7 +20,7 @@ function RecipeCard({ recipe, index, test }) {
   const title = strDrink || strMeal || strIngredient || strIngredient1;
   const thumb = strDrinkThumb || strMealThumb;
   const id = idMeal || idDrink;
-  const path = idMeal ? `/comidas/${id}` : `/bebidas/${id}`;
+  const path = idMeal ? `/meals/${id}` : `/drinks/${id}`;
   const ingredientThumb = strIngredient
     ? `https://www.themealdb.com/images/ingredients/${title}-Small.png`
     : `https://www.thecocktaildb.com/images/ingredients/${title}-Small.png`;
@@ -34,7 +34,7 @@ function RecipeCard({ recipe, index, test }) {
         .then((result) => {
           setData(result);
           setLoading(false);
-          history.push('/comidas', { from: 'explore' });
+          history.push('/meals', { from: 'explore' });
         });
     } else if (thumb) {
       history.push(path);
@@ -44,16 +44,16 @@ function RecipeCard({ recipe, index, test }) {
         .then((result) => {
           setData(result);
           setLoading(false);
-          history.push('/bebidas', { from: 'explore' });
+          history.push('/drinks', { from: 'explore' });
         });
     }
   }
 
   function backgroundColorBox() {
-    if (history.location.pathname.includes('explorar')) {
+    if (history.location.pathname.includes('explore')) {
       return 'ingredient-recipes-card-box';
     }
-    if (path.includes('comidas')) {
+    if (path.includes('meals')) {
       return 'meals-recipes-card-box';
     } return 'drinks-recipes-card-box';
   }

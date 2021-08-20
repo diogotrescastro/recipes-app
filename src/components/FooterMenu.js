@@ -7,13 +7,13 @@ import mealIcon from '../images/mealIcon.svg';
 function FooterMenu() {
   return (
     <footer data-testid="footer" className="footer">
-      <Link to="/bebidas">
+      <Link to="/drinks">
         <img data-testid="drinks-bottom-btn" alt="drinkIcon" src={ drinkIcon } />
       </Link>
-      <Link to="/explorar">
+      <Link to="/explore">
         <img data-testid="explore-bottom-btn" alt="exploreIcon" src={ exploreIcon } />
       </Link>
-      <Link to="/comidas">
+      <Link to="/meals">
         <img data-testid="food-bottom-btn" alt="mealIcon" src={ mealIcon } />
       </Link>
     </footer>

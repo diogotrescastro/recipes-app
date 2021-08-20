@@ -21,16 +21,16 @@ function SearchBar() {
 
   useEffect(() => {
     const filterButton = document.querySelector('.filter-btn').style;
-    if (pathname === '/comidas') {
+    if (pathname === '/meals') {
       filterButton.backgroundColor = '#FAC065';
     }
-    if (pathname === '/bebidas') {
+    if (pathname === '/drinks') {
       filterButton.backgroundColor = '#E34F5E';
     }
   }, [pathname]);
 
   async function searchButton() {
-    if (pathname === '/comidas') {
+    if (pathname === '/meals') {
       const newResults = await searchBarFetchMeal(search, radio) || [];
       if (typeof (newResults) === 'string') {
         // eslint-disable-next-line no-alert
@@ -39,7 +39,7 @@ function SearchBar() {
         setData(newResults);
       }
     }
-    if (pathname === '/bebidas') {
+    if (pathname === '/drinks') {
       const newResults = await searchBarFetchCockTail(search, radio) || [];
       if (typeof (newResults) === 'string') {
         // eslint-disable-next-line no-alert

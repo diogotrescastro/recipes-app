@@ -92,7 +92,7 @@ function DrinkRecipeInProgress({ match: { params: { id } } }) {
           </div>
         </div>
         <div className="detail-infos">
-          <h3>CheckList de Ingredientes</h3>
+          <h3>Ingredients CheckList</h3>
           <form className="ingredient-checklist">
             {
               listIngredients(recipe).map((ingredient, index) => (
@@ -118,11 +118,11 @@ function DrinkRecipeInProgress({ match: { params: { id } } }) {
               ))
             }
           </form>
-          <h3 className="progress-instructions">Instruções</h3>
+          <h3 className="progress-instructions">Instructions</h3>
           <p data-testid="instructions">{ strInstructions }</p>
         </div>
         <div className="div-start-btn">
-          <Link to="/receitas-feitas">
+          <Link to="/done-recipes">
             <button
               type="button"
               data-testid="finish-recipe-btn"
@@ -130,7 +130,7 @@ function DrinkRecipeInProgress({ match: { params: { id } } }) {
               onClick={ () => saveDoneRecipes(saveDone, setDoneRecipes) }
               className="finish-drink-btn"
             >
-              Finalizar Receita
+              done recipe
             </button>
           </Link>
         </div>
