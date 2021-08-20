@@ -12,7 +12,7 @@ function RecipeDetailsIframe({ recipeType, strYoutube }) {
     return (
       <iframe
         width="100%"
-        // height="315"
+        // height="400px"
         src={ `https://www.youtube.com/embed/${getVideoTag()}` }
         title="YouTube video player"
         frameBorder="0"
@@ -22,6 +22,7 @@ function RecipeDetailsIframe({ recipeType, strYoutube }) {
   encrypted-media; gyroscope;
   picture-in-picture"
         allowFullScreen
+        // className="video-frame"
       />
     );
   }
