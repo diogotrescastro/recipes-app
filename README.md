@@ -27,7 +27,6 @@ O layout com foco dispositivos móveis, então todos os protótipos vão estar d
 - [x] API
 - [x] ESLINT
 - [x] ROUTER
-- [x] FIGMA
 - [x] HTML5
 - [x] CSS3
 
