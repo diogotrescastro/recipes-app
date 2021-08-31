@@ -12,11 +12,12 @@ O layout com foco dispositivos móveis, então todos os protótipos vão estar d
 </h3>
 
 <p float="left">
-<img height="400" margin:"5px" src="src/images/gifs/login.gif">
-<img height="400" margin:"5px" src="src/images/gifs/main.gif">
-<img height="400" margin:"5px"  src="src/images/gifs/detaildrink.gif">
-<img height="400" margin:"5px"  src="src/images/gifs/progress.gif">
-<img height="400" margin:"5px"  src="src/images/gifs/favs.gif">
+<img height="400" margin:"5px" src="src/images/login.gif">
+<img height="400" margin:"5px" src="src/images/main.gif">
+<img height="400" margin:"5px"  src="src/images/detaildrink.gif">
+<img height="400" margin:"5px"  src="src/images/progress.gif">
+ <img height="400" margin:"5px"  src="src/images/explore.gif">
+<img height="400" margin:"5px"  src="src/images/favs.gif">
 </p>
 
 ### 🛠 Tecnologias e Ferramentas Utilizadas:
