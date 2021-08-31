@@ -6,10 +6,7 @@ A base de dados com 2 APIs distintas, uma para comidas e outra para bebidas.
 
 O layout com foco dispositivos móveis, então todos os protótipos vão estar desenvolvidos em telas menores.
 
-
-<h3>
- <a href="https://diogoaugusto.dev/recipes-app/">Confira o Deploy clicando aqui.</a>
-</h3>
+ <a href="https://diogoaugusto.dev/recipes-app/">Clique aqui para confirir o Deploy.</a>
 
 <p float="left">
 <img height="400" margin:"5px" src="src/images/login.gif">
